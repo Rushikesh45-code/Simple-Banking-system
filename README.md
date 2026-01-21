@@ -64,6 +64,23 @@ Follow these steps to run the project depending on your setup:
 On Windows use:
 
 bank.exe
+🔸 Option 2: Using Visual Studio Code
+
+Install C++ Extension Pack and MinGW (Windows)
+
+Open the project folder
+
+Press Ctrl + Shift + B to build
+
+Press F5 to run
+
+🔸 Option 3: Using CodeBlocks / Dev C++
+
+Create a new console project
+
+Replace main.cpp with provided code
+
+Build & Run
 
 
 ------ Banking Menu ------
@@ -74,5 +91,6 @@ bank.exe
 5. Withdraw Money
 6. Exit
 Enter your choice:
+
 
 
