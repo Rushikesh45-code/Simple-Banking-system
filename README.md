@@ -48,10 +48,24 @@ Each `---` represents a separator between two accounts.
 
 ## ▶️ How to Compile & Run
 
-### **Using g++**
-```sh
-g++ main.cpp -o bank
+
+Follow these steps to run the project depending on your setup:
+
+### **🔸 Option 1: Using g++ (Terminal / CMD / PowerShell)**
+
+1. Open terminal in project folder
+2. Compile the code:
+   ```sh
+   g++ main.cpp -o bank
+   Run the executable:
+
 ./bank
+
+On Windows use:
+
+bank.exe
+
+
 ------ Banking Menu ------
 1. Create Account
 2. Display All Accounts
@@ -60,23 +74,5 @@ g++ main.cpp -o bank
 5. Withdraw Money
 6. Exit
 Enter your choice:
-📝 Example Usage
-Creating Account
-Enter your name: Harry Potter
-Your account number has been generated: 10001
-Enter Initial Balance: 5000
-Account created and saved successfully!
 
-Deposit
-Enter account number: 10001
-Enter amount to deposit: 1500
-Deposit successful! New balance: 6500
 
-Withdraw
-Enter account number: 10001
-Enter amount to withdraw: 2000
-Withdrawal successful! New balance: 4500
-
-Delete
-Enter account number to delete: 10001
-Account deleted successfully!
