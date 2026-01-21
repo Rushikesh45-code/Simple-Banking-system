@@ -1,54 +1,54 @@
-# 🏦 Banking System with File Storage (C++)
+# 🏦 Banking System (C++) — Final Version
 
-This is a console-based **Banking Management System** implemented in **C++**.  
-It supports multiple accounts, persistent file storage, auto-generated account numbers, and basic banking operations.
-
----
-
-## 📌 Features
-
-✔ Create multiple bank accounts  
-✔ Auto-generate unique account number  
-✔ Store account data permanently in file  
-✔ View all accounts  
-✔ View single account using account number  
-✔ Deposit & Withdraw money  
-✔ Delete accounts safely  
-✔ Uses `vector` for dynamic storage  
-✔ Graceful invalid input handling  
+A complete console-based **Banking Management System** written in **C++** with file storage, multiple accounts support, auto-generated account numbers, and basic transaction handling.
 
 ---
 
-## 🛠 Technologies Used
+## 🔹 Key Features
 
-- **Programming Language:** C++
-- **Concepts Used:**
-  - Object Oriented Programming (OOP)
-  - File Handling (`ifstream`, `ofstream`)
-  - Vectors (`std::vector`)
-  - `getline()` for string input
-  - Persistent storage using `.txt` file
-
----
-
-- `main.cpp` → Source code  
-- `account_data.txt` → Stores account details  
-- `README.md` → Project Documentation  
+- Create multiple bank accounts
+- Auto-generate unique account numbers
+- Store account data permanently in a `.txt` file
+- Display all stored accounts
+- Display a single account using account number
+- Deposit & withdraw money
+- Delete specific accounts
+- Prevent negative transactions & invalid access
+- Uses `vector` for dynamic storage
+- Data persistence using file I/O
 
 ---
 
-## 🗄️ Data Storage Format
+## 🧰 Technologies & Concepts Used
 
-Data is stored as:
-
-
-Each `---` separates two accounts.
+| Category | Details |
+|---------|---------|
+| Language | C++ |
+| Concepts | OOP (Classes), File Handling, Vectors, Input Validation |
+| Files | `ifstream`, `ofstream`, `.txt` file |
+| Storage | Persistent (non-volatile) |
 
 ---
 
-## ▶️ How to Run
+## 📁 Project Structure
 
-### **Compile using g++**
+BankingSystem/
+├── main.cpp
+├── account_data.txt ← auto-created at runtime
+└── README.md
+
+---
+
+## 🗄️ Data Storage Format (`account_data.txt`)
+
+
+Each `---` represents a separator between two accounts.
+
+---
+
+## ▶️ How to Compile & Run
+
+### **Using g++**
 ```sh
 g++ main.cpp -o bank
 ./bank
@@ -60,6 +60,23 @@ g++ main.cpp -o bank
 5. Withdraw Money
 6. Exit
 Enter your choice:
+📝 Example Usage
+Creating Account
+Enter your name: Harry Potter
+Your account number has been generated: 10001
+Enter Initial Balance: 5000
+Account created and saved successfully!
 
-## 📁 File Structure
+Deposit
+Enter account number: 10001
+Enter amount to deposit: 1500
+Deposit successful! New balance: 6500
 
+Withdraw
+Enter account number: 10001
+Enter amount to withdraw: 2000
+Withdrawal successful! New balance: 4500
+
+Delete
+Enter account number to delete: 10001
+Account deleted successfully!
